@@ -32,7 +32,9 @@ const Home = () => {
         <div>
           <Contuct></Contuct>
         </div>
-       
+        <div>
+          <Footer></Footer>
+        </div>
       </div>
         </div>
     );

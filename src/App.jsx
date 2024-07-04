@@ -15,13 +15,14 @@ function App() {
      <div className='app text-white'>
         <Nav className="nav text-white"></Nav>
         </div>
-        <Outlet></Outlet>
         <div>
-          <Footer></Footer>
-        </div>
+       <Outlet></Outlet>
+       </div>
         <div className="">
          <Design></Design>
         </div>
+      
+       
      </div>
     </>
   )

@@ -10,7 +10,7 @@ const Education = () => {
     return (
         <div className="mt-10">
             <div className="text-center text-3xl font-bold"><h1>Educational & Courses</h1></div>
-            <div className="flex justify-center items-center gap-36 mt-10">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-36 mt-10">
                 <div className="w-400 border-2 border-cyan-300 p-10 rounded-md">
                     <h1 className="font-bold text-2xl border-b-2 w-28  border-b-cyan-200 ">Education</h1>
                     <h1>Institution: Chowmouni Government S.A College</h1>

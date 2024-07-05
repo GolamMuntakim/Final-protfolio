@@ -11,7 +11,7 @@ const Banner = () => {
     });
     return (
         <div>
-            <div className="flex items-center justify-center gap-56 mt-20">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-56 mt-20">
                 <div>
                     <h1>
                        <span className="font-bold text-3xl"> Hi</span> , I am <span className="font-semibold text-cyan-200"> {text}</span>
@@ -22,8 +22,7 @@ const Banner = () => {
                     </h1>
                     <button className="btn btn-outline btn-info mt-10 "><a className="flex gap-4" href="/public/resume.pdf" download> <FaDownload /> Download Resume</a></button>
                 </div>
-                <div >
-                    {/* <div  className="h-[300px] w-[300px] bg-cyan-950 rounded-full"></div> */}
+                <div>
                    <img className="h-[400px] rounded-full" src="/public/images/link.jpeg" alt="" />
                 </div>
             </div>

@@ -1,11 +1,21 @@
-import { useState } from "react";
 
+import pdf_File_Url from "../../public/certificate.pdf"
+import { FaDownload } from "react-icons/fa";
 
 const Education = () => {
-    const [showCertificate, setShowCertificate] = useState(false);
-
-    const handleViewCertificate = () => {
-        setShowCertificate(true);
+    const downloadFileAtURL = (url) => {
+        fetch(url)
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(new Blob([blob]));
+                const a = document.createElement('a');
+                a.href = url;
+                a.setAttribute('download', 'certificate.pdf');
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            })
+            .catch(error => console.error('Download failed:', error));
     };
     return (
         <div className="mt-10">
@@ -22,21 +32,8 @@ const Education = () => {
                 <h1 className="font-bold text-2xl border-b-2 w-20  border-b-cyan-200 ">Course</h1>
                 <h1>Institute : Programming Hero</h1>
                 <h1>Course : Web development</h1>
-                <button
-                        className="btn btn-outline btn-info mt-2"
-                        onClick={handleViewCertificate}
-                    >
-                        View Certificate
-                    </button>
-                    {showCertificate && (
-                        <div className="mt-4">
-                            <iframe
-                                src="/public/certificate.pdf"
-                                title="Certificate"
-                                className="w-full h-64 border-2 border-gray-300 rounded-md"
-                            ></iframe>
-                        </div>
-                    )}
+                <button onClick={()=>{downloadFileAtURL(pdf_File_Url)}} id="download" className="btn btn-outline btn-info mt-10 "> <FaDownload /> Download certificate</button>
+                    
                 </div>
             </div>
         </div>

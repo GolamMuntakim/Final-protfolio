@@ -4,7 +4,7 @@ const Blogs = () => {
     return (
         <div>
            <div className=" p-6 rounded-md shadow-md  ">
-	<img src="/public/images/blog.jpeg" alt="" className="object-cover object-center w-full rounded-md h-72 " />
+	<img src="images/blog.jpeg" alt="" className="object-cover object-center w-full rounded-md h-72 " />
 	<div className="mt-6 mb-2 text-white">
 		
 		<h2 className="text-xl font-semibold tracking-wide">Why we should use react for frontend?</h2>

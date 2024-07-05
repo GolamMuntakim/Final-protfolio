@@ -1,8 +1,24 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { FaDownload } from "react-icons/fa";
+import pdf_File_Url from "../../public/resume.pdf"
 
-
+// const pdf_File_Url='http://localhost:5174/resume.pdf'
 const Banner = () => {
+    const downloadFileAtURL = (url) => {
+        fetch(url)
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(new Blob([blob]));
+                const a = document.createElement('a');
+                a.href = url;
+                a.setAttribute('download', 'resume.pdf');
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            })
+            .catch(error => console.error('Download failed:', error));
+    };
+
     const [text]= useTypewriter({
         words:['Frontend developer', 'Beckend developer', 'Fullstack developer'],
         loop:{},
@@ -20,10 +36,11 @@ const Banner = () => {
                         I love to explore technology <br />
                         i want to become a full stack developer
                     </h1>
-                    <button className="btn btn-outline btn-info mt-10 "><a className="flex gap-4" href="/public/resume.pdf" download> <FaDownload /> Download Resume</a></button>
+                    {/* <a className="flex gap-4" href="resume.pdf" download><button className="btn btn-outline btn-info mt-10 "> <FaDownload /> Download Resume</button></a> */}
+                    <button onClick={()=>{downloadFileAtURL(pdf_File_Url)}} id="download" className="btn btn-outline btn-info mt-10 "> <FaDownload /> Download Resume</button>
                 </div>
                 <div>
-                   <img className="h-[400px] rounded-full" src="/public/images/link.jpeg" alt="" />
+                   <img className="h-[400px] rounded-full" src="images/link.jpeg" alt="" />
                 </div>
             </div>
         </div>

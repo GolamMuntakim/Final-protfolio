@@ -9,7 +9,7 @@ const Project = () => {
                 <div className=" bg-base-200 ">
                     <div className="hero-content flex-col lg:flex-row">
                         <img
-                            src="/public/images/projectOne.JPG"
+                            src="images/projectOne.JPG"
                             className="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 className="text-2xl font-bold">Real State</h1>
@@ -31,7 +31,7 @@ const Project = () => {
                 <div className=" bg-base-200 ">
                     <div className="hero-content flex-col lg:flex-row">
                         <img
-                            src="/public/images/projecttwo.JPG"
+                            src="images/projecttwo.JPG"
                             className="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 className="text-2xl font-bold">E-study</h1>
@@ -53,7 +53,7 @@ const Project = () => {
                 <div className=" bg-base-200 ">
                     <div className="hero-content flex-col lg:flex-row">
                         <img
-                            src="/public/images/projectthree.JPG"
+                            src="images/projectthree.JPG"
                             className="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 className="text-2xl font-bold">Traveler's</h1>

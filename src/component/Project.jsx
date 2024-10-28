@@ -22,8 +22,8 @@ const Project = () => {
                             </p>
                            <div>
                             <Link to="https://luxary-state.netlify.app" target="_blank"> <button className="btn btn-outline btn-error">Live Link</button></Link>
-                            <Link href="https://github.com/GolamMuntakim/Real-state"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
-                            <Link href="https://github.com/GolamMuntakim/Real-state-server"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
+                            <Link to="https://github.com/GolamMuntakim/Real-state" target="_blank"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
+                            <Link to="https://github.com/GolamMuntakim/Real-state-server" target="_blank"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
                            </div>
                         </div>
                     </div>
@@ -44,8 +44,8 @@ const Project = () => {
                             </p>
                            <div>
                             <Link to="https://e-studyonline.netlify.app" target="_blank"> <button className="btn btn-outline btn-error">Live Link</button></Link>
-                            <Link to="https://github.com/GolamMuntakim/Assignments"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
-                            <Link to="https://github.com/GolamMuntakim/Assignment-server"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
+                            <Link to="https://github.com/GolamMuntakim/Assignments" target="_blank"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
+                            <Link to="https://github.com/GolamMuntakim/Assignment-server" target="_blank"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
                            </div>
                         </div>
                     </div>
@@ -66,8 +66,8 @@ const Project = () => {
                             </p>
                            <div>
                             <Link to="https://tour-client.netlify.app" target="_blank"> <button className="btn btn-outline btn-error">Live Link</button></Link>
-                            <Link to="https://github.com/GolamMuntakim/tour-client"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
-                            <Link to="https://github.com/GolamMuntakim/tour-server"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
+                            <Link to="https://github.com/GolamMuntakim/tour-client" target="_blank"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
+                            <Link to="https://github.com/GolamMuntakim/tour-server" target="_blank"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
                            </div>
                         </div>
                     </div>

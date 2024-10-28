@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 const Project = () => {
     return (
-        <div className="mt-20" id="project">
-            <div className="font-bold text-3xl mt-10 text-center border-2-b  border-cyan-950">My Projects</div>
+        <div className="container w-full mx-auto mt-20 lg:p-20" id="project">
+            <div className="font-bold text-3xl mt-10 text-center border-2-b  border-cyan-950 w-full ">My Projects</div>
             <div className="mt-10">
-                <div className=" bg-base-200 ">
-                    <div className="hero-content flex-col lg:flex-row">
+                <div className=" bg-base-200 w-full">
+                    <div className="hero-content flex-col lg:flex-row ">
                         <img
                             src="images/projectOne.JPG"
                             className="max-w-sm rounded-lg shadow-2xl" />
-                        <div>
+                        <div className="">
                             <h1 className="text-2xl font-bold">Real State</h1>
                             <p className="py-6">
                                <span className="font-bold">Description</span>: This project is a real state based project , here admin will make agents and agent will add state/property with the approval of admin, user can make offer request to buye the project , if agent accept the request then the user can pay. Every one have their own dashboard. <br />
@@ -21,14 +21,14 @@ const Project = () => {
                               <p className="mt-4"> <span className="font-bold">Technology</span>: headlessui/react,stripe/react-stripe-js,stripe/stripe-js,tanstack/react-query,axios,firebase,jsonwebtoken,lottie-react,react-date-picker,react-dom,react-helmet-async,react-hot-toast,react-icons,react-parallax,react-router-dom,react-simple-typewriter,react-spinners,recharts,sweetalert2,swiper</p>
                             </p>
                            <div>
-                            <Link to="https://b9-a12-8bd90.web.app/"> <button className="btn btn-outline btn-error">Live Link</button></Link>
+                            <Link to="https://luxary-state.netlify.app" target="_blank"> <button className="btn btn-outline btn-error">Live Link</button></Link>
                             <Link href="https://github.com/GolamMuntakim/Real-state"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
                             <Link href="https://github.com/GolamMuntakim/Real-state-server"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
                            </div>
                         </div>
                     </div>
                 </div>
-                <div className=" bg-base-200 ">
+                <div className=" bg-base-200 mt-10">
                     <div className="hero-content flex-col lg:flex-row">
                         <img
                             src="images/projecttwo.JPG"
@@ -43,14 +43,14 @@ const Project = () => {
                               <p className="mt-4"> <span className="font-bold">Technology</span>: tanstack/react-query,axios,date-fns,firebase,lottie-react,react-datepicker,react-dom,react-helmet,react-hot-toast,react-icons,react-lottie,react-router-dom</p>
                             </p>
                            <div>
-                            <Link to="https://b9-a11-37619.web.app/"> <button className="btn btn-outline btn-error">Live Link</button></Link>
+                            <Link to="https://e-studyonline.netlify.app" target="_blank"> <button className="btn btn-outline btn-error">Live Link</button></Link>
                             <Link to="https://github.com/GolamMuntakim/Assignments"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
                             <Link to="https://github.com/GolamMuntakim/Assignment-server"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
                            </div>
                         </div>
                     </div>
                 </div>
-                <div className=" bg-base-200 ">
+                <div className=" bg-base-200 mt-10">
                     <div className="hero-content flex-col lg:flex-row">
                         <img
                             src="images/projectthree.JPG"
@@ -65,7 +65,7 @@ const Project = () => {
                               <p className="mt-4"> <span className="font-bold">Technology</span>:firebase,lottie-react,match-sorter,react-dom,react-fast-marquee,react-helmet,react-hook-form,react-hot-toast,react-lottie,react-router-dom,react-simple-typewriter,swiper,sweetalert2</p>
                             </p>
                            <div>
-                            <Link to="https://tour-client-6eeb8.web.app/"> <button className="btn btn-outline btn-error">Live Link</button></Link>
+                            <Link to="https://tour-client.netlify.app" target="_blank"> <button className="btn btn-outline btn-error">Live Link</button></Link>
                             <Link to="https://github.com/GolamMuntakim/tour-client"> <button className="btn btn-outline btn-success"><FaGithub /> Client</button></Link>
                             <Link to="https://github.com/GolamMuntakim/tour-server"> <button className="btn btn-outline btn-warning"><FaGithub /> Server</button></Link>
                            </div>

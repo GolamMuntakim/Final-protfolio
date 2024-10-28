@@ -12,7 +12,7 @@ function App() {
   return (
     <>
      <div>
-     <div className='app text-white'>
+     <div className='app text-white max-w-screen-sm lg:max-w-screen-xl mx-auto '>
         <Nav className="nav text-white"></Nav>
         </div>
         <div>
